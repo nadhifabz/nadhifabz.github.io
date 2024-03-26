@@ -5,67 +5,74 @@
 }
 
 body {
-  /* display: flex; */
-  /* width: 576px;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  margin: auto; */
-}
-
-.hero, .gallery {
-  width: 576px;
-  position: relative;
-  min-height: 100vh;
-  /* padding-bottom: 10%; */
+  /* width: 576px; */
+  min-height: 4000px;
   margin: auto;
 }
 
-/* Section Hero */
+.hero {
+  width: 425px;
+  position: relative;
+  min-height: 100vh;
+}
 
-/* .hero::before {
+.hero::before {
   content: "";
   position: absolute;
-  background-image: url('img/b&g/b&g.png');
-  width: 50%;
-  height: 50%;
+  width: 375px;
+  height: 100%;
+  background-image: url(https://picsum.photos/id/111/1920/1280);
+  z-index: -1;
+  filter: grayscale();
+  background-size: cover;
+  background-position: center;
+}
+
+/* body {
+  width: 576px;
+  min-height: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-image: url(https://picsum.photos/id/111/1920/1280);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   background-position: center;
-} */
-
-.hero {
-  background-color: #818181;
+  
+  filter: grayscale();
+  background-size: cover;
+  background-position: center;
 }
+.hero {
+  width: 576px;
+  position: relative;
+  min-height: 100vh;
+  margin: auto;
+}
+
 
 .hero h1 {
   position: absolute;
-  top: 50%;
-  left: 20%;
   color: var(--pink);
   z-index: 1;
 }
 
 .hero img {
-  /* translate: 50px 5px; */
   z-index: -1;
-}
-
-#bride{
-  translate: -100px 0px;
-}
-
-#groom{
-  translate: 100px 0px;
-}
-
-.gallery {
-    background-color: aliceblue;
-}
+} */
 
 #navbar {
-  background-color: aliceblue;
-  max-width: 576px;
-  max-height: 10vh;
+  background-color: black;
+  width: 576px;
+  height: 10vh;
 }
 
 .splide__slide img {
@@ -82,9 +89,30 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 576px) {
-  .hero, .gallery {
-    /* width: 576px; */
-    /* height: 100%; */
+@media (max-width: 425px) {
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 425px;
+    height: 100%;
+    background-image: url(https://picsum.photos/id/112/1920/1280);
+    z-index: -1;
+    filter: grayscale();
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 375px;
+    height: 100%;
+    background-image: url(https://picsum.photos/id/113/1920/1280);
+    z-index: -1;
+    filter: grayscale();
+    background-size: cover;
+    background-position: center;
   }
 }
