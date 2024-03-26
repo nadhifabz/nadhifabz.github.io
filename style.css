@@ -6,12 +6,12 @@
 
 body {
   /* display: flex; */
-  width: 576px;
+  /* width: 576px;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
   margin: auto;
-}
+} */
 
 .hero, .gallery {
   width: 576px;
