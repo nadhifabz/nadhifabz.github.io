@@ -1,0 +1,79 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  /* max-width: 576px; */
+  min-height: 100vh;
+  font-size: 1.2rem;
+}
+
+.hero, .gallery {
+  max-width: 576px;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 10%;
+}
+
+/* Section Hero */
+
+/* .hero::before {
+  content: "";
+  position: absolute;
+  background-image: url('img/b&g/b&g.png');
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+  background-position: center;
+} */
+
+.hero {
+  background-color: #818181;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: var(--pink);
+  z-index: 1;
+}
+
+.hero img {
+  translate: 50px 5px;
+  z-index: -1;
+}
+
+#bride{
+  translate: -100px 0px;
+}
+
+#groom{
+  translate: 100px 0px;
+}
+
+.gallery {
+    background-color: aliceblue;
+}
+
+#navbar {
+  background-color: aliceblue;
+  max-width: 576px;
+  max-height: 10vh;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
