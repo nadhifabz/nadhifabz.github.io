@@ -15,7 +15,7 @@ body {
 .hero {
   width: 576px;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .hero::before {
@@ -46,6 +46,66 @@ body {
 
 /* BRIDE SECTION */
 
+.bride {
+  width: 576px;
+  height: 100vh;
+}
+
+/* GROOM SECTION */
+
+.groom {
+  width: 576px;
+  height: 100vh;
+  background-color: bisque;
+}
+
+/* STORY SECTION */
+
+.story {
+  width: 576px;
+  height: 100vh;
+  background-color:aliceblue;
+}
+
+.story-image {
+  border-radius: 50%;
+}
+
+/* INFO SECTION */
+
+.info {
+  width: 576px;
+  height: 100vh;
+  background-color:rgb(49, 49, 49);
+}
+
+/* GALLERY SECTION */
+
+.gallery {
+  width: 576px;
+  height: 100vh;
+  background-color:rgb(255, 92, 92);
+}
+
+#gallery_splide {
+  width: 576px;
+}
+
+/* .caption {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+} */
+
+/* #gallery .is-prev img, #gallery .is-next img {
+  max-height: 80%;
+  margin-top: 2rem;
+  margin-bottom: auto;
+} */
+
+/* INFO SECTION */
+
 #navbar {
   background-color: black;
   width: 576px;
@@ -71,20 +131,13 @@ body {
     width: 100vw;
   }
   
-  .hero {
+  .hero, .bride, .groom, .gallery, .story, .info, #navbar, #gallery_splide {
     width: 100vw;
   }
 
   .hero::before {
-    content: "";
-    position: absolute;
-    width: calc(100vw);
-    height: 100%;
+    width: 100vw;
     background-image: url(https://picsum.photos/id/112/1920/1280);
-    z-index: -1;
-    filter: grayscale();
-    background-size: cover;
-    background-position: center;
   }
 }
 
@@ -93,28 +146,27 @@ body {
     width: 100vw;
   }
   
-  .hero {
+  .hero, .bride, .groom, .gallery, .story, .info, #navbar, #gallery_splide {
     width: 100vw;
+  }
+
+  .hero img {
+    width: calc(100vw - 10px);
   }
 
   .hero::before {
     width: 100vw;
-    
     background-image: url(https://picsum.photos/id/112/1920/1280);
-  }
-
-  #navbar {
-    width: 100vw;
   }
 }
 
 @media (max-width: 375px) {
 
-  body {
+  /* body {
     width: 100vw;
-  }
+  } */
   
-  .hero {
+  .hero, body, .bride, .groom, .gallery, .story, .info, #navbar, #gallery_splide {
     width: 100vw;
   }
 
@@ -123,7 +175,7 @@ body {
     background-image: url(https://picsum.photos/id/113/1920/1280);
   }
 
-  #navbar {
-    width: 100vw;
+  .hero img {
+    width: calc(100vw - 10px);
   }
 }
