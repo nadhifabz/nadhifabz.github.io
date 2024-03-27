@@ -16,6 +16,7 @@ body {
   width: 576px;
   position: relative;
   height: 100vh;
+  min-height: 600px;
 }
 
 .hero::before {
@@ -49,6 +50,7 @@ body {
 .bride {
   width: 576px;
   height: 100vh;
+  min-height: 600px;
 }
 
 /* GROOM SECTION */
@@ -57,6 +59,7 @@ body {
   width: 576px;
   height: 100vh;
   background-color: bisque;
+  min-height: 600px;
 }
 
 /* STORY SECTION */
@@ -65,6 +68,7 @@ body {
   width: 576px;
   height: 100vh;
   background-color:aliceblue;
+  min-height: 600px;
 }
 
 .story-image {
@@ -77,6 +81,7 @@ body {
   width: 576px;
   height: 100vh;
   background-color:rgb(49, 49, 49);
+  min-height: 600px;
 }
 
 /* GALLERY SECTION */
@@ -85,6 +90,7 @@ body {
   width: 576px;
   height: 100vh;
   background-color:rgb(255, 92, 92);
+  min-height: 600px;
 }
 
 #gallery_splide {
@@ -110,6 +116,7 @@ body {
   background-color: black;
   width: 576px;
   height: 10vh;
+  position: fixed;
 }
 
 .splide__slide img {
@@ -130,6 +137,11 @@ body {
   body {
     width: 100vw;
   }
+
+  .hero img, .bride img, .groom img, .story img {
+    width: 60%;
+    height: auto;
+  }
   
   .hero, .bride, .groom, .gallery, .story, .info, #navbar, #gallery_splide {
     width: 100vw;
@@ -142,8 +154,16 @@ body {
 }
 
 @media (max-width: 425px) {
+  html {
+    font-size: 80%;
+  }
   body {
     width: 100vw;
+  }
+
+  .hero img, .bride img, .groom img, .story img {
+    width: 50%;
+    height: auto;
   }
   
   .hero, .bride, .groom, .gallery, .story, .info, #navbar, #gallery_splide {
@@ -161,10 +181,14 @@ body {
 }
 
 @media (max-width: 375px) {
+  html {
+    font-size: 70%;
+  }
 
-  /* body {
-    width: 100vw;
-  } */
+  .hero img, .bride img, .groom img, .story img {
+    width: 50%;
+    height: auto;
+  }
   
   .hero, body, .bride, .groom, .gallery, .story, .info, #navbar, #gallery_splide {
     width: 100vw;
